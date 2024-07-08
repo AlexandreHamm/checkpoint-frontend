@@ -9,7 +9,7 @@ export default function Countries() {
   const countries = data?.countries || [];
 
   return (
-    <div className="d-flex">
+    <div className="d-flex flex-wrap">
       {countries.map((country: Country) => (
         <CountryCard key={country.id} country={country} link={`/country/${country.code}`} />
       ))}
